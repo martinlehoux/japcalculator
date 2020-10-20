@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: yarn
-      - run: npx jest
+      - run: yarn test
 workflows:
   Testing:
     jobs:

@@ -5,8 +5,7 @@ jobs:
       - image: node:14
     steps:
       - checkout
-      - node/install-packages:
-        pkg-manager: yarn   
+      - run: yarn
       - run: jest
 workflows:
   Testing:

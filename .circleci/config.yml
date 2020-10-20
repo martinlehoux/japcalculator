@@ -3,7 +3,8 @@ orbs:
   node: circleci/node@3.0.0
 jobs:
   test:
-    - checkout
-    - node/install-packages:
-      pkg-manager: yarn   
-    - run: jest
+    steps:
+      - checkout
+      - node/install-packages:
+        pkg-manager: yarn   
+      - run: jest

@@ -8,3 +8,7 @@ jobs:
       - node/install-packages:
         pkg-manager: yarn   
       - run: jest
+workflows:
+  Testing:
+    jobs:
+      - test
